@@ -16,3 +16,9 @@ build-errors.txt
 
 # Production build (generated automatically)
 dist/
+
+# Isolated integration-test database files (never product data)
+.test-postgres/
+
+*.backup
+*.backup.json
