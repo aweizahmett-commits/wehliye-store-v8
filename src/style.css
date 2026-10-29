@@ -12,3 +12,33 @@
 
 /* V7 modern ivory / deep emerald / copper identity */
 :root{--gold:#bf8055;--ink:#102c2a}body{background:#faf9f6;color:#172b29}.header{background:#102c2a;border-color:#1d4943}.nav button:hover,.text-link:hover{color:#e7ae7b}.bag-btn span,.hero-dots button.active{background:#bf8055}.premium-hero .light-btn{background:#bf8055;color:#fff}.eyebrow,.product-info small{color:#a36b44}.usp,.checkout-summary,.account-bar{background:#f1f3ee}.section,.shop-page{background:#faf9f6}.btn.dark,.chips button.selected{background:#102c2a;border-color:#102c2a}.admin-side{background:#102c2a}.product-photo{background:#eff1ed}.footer{background:#102c2a}
+
+/* WEHLIYE STORE V8 - Mobile Menu Fix */
+@media (max-width: 800px) {
+  .header .nav {
+    background: #0B1511;
+    color: #FFFFFF;
+    border-top: 1px solid #00A86B;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    z-index: 100;
+  }
+
+  .header .nav button {
+    color: #FFFFFF;
+    background: transparent;
+    font-weight: 600;
+    padding: 14px 12px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .header .nav button:hover,
+  .header .nav button:focus-visible {
+    color: #D4AF37;
+    background: #153D2B;
+  }
+
+  .header .mobile {
+    color: #FFFFFF;
+  }
+}
