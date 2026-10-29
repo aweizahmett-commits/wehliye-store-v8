@@ -1,0 +1,18 @@
+.env
+.env.*
+!.env.example
+node_modules/
+customer-sessions.json
+store-data.json
+store-data.backup.json
+server.backup.mjs
+server.before-postgres.mjs
+server.before-final-postgres.mjs
+*.log
+
+# Local backups and temporary files
+*.backup.*
+build-errors.txt
+
+# Production build (generated automatically)
+dist/
