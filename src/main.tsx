@@ -16,22 +16,22 @@ return <>
   <div className="wlp-top"><span aria-hidden="true">◎ &nbsp; ♪ &nbsp; f</span><Menu size={27} aria-hidden="true"/></div>
   <div className="wlp-brand"><strong>W</strong><h2>WEHLIYE STORE</h2><p>— MEN'S FASHION —</p></div>
   <section className="wlp-stage"><div className="wlp-arc" aria-hidden="true"/><div className="wlp-models">
-    <img className="wlp-model wlp-left" src="/images/wehliye-welcome/right.png" alt="WEHLIYE blue blazer collection"/>
-    <img className="wlp-model wlp-center" src="/images/wehliye-welcome/center.png" alt="WEHLIYE formal suits"/>
-    <img className="wlp-model wlp-right" src="/images/wehliye-welcome/jacket.png" alt="WEHLIYE jackets"/>
+    <img className="wlp-model wlp-left" src="/images/wehliye-welcome/right.webp" alt="WEHLIYE blue blazer collection" loading="eager" fetchPriority="high" decoding="async" />
+    <img className="wlp-model wlp-center" src="/images/wehliye-welcome/center.webp" alt="WEHLIYE formal suits" loading="eager" fetchPriority="high" decoding="async" />
+    <img className="wlp-model wlp-right" src="/images/wehliye-welcome/jacket.webp" alt="WEHLIYE jackets" loading="eager" fetchPriority="high" decoding="async" />
   </div></section>
   <div className="wlp-copy"><span>W E L C O M E &nbsp; T O</span><h1>WEHLIYE STORE</h1><h3>— MEN'S FASHION —</h3><p>Modern, classic and everyday styles for the modern man.</p><button type="button" onClick={()=>go('home')}>WEHLIYE STORE <ArrowRight size={20}/></button></div>
   <div className="wlp-services"><span>DELIVERY</span><span>EASY SHOPPING</span><span>SECURE CHECKOUT</span><span>CUSTOMER SERVICE</span></div>
   <section className="wlp-categories">{[
-    ['Suits','center.png'],['Hoodies','hoodie.png'],['Shirts','shirt.png'],['T-Shirts','tee.png'],['Jackets','jacket.png']
-  ].map(([label,photo])=><div className="wlp-category" key={label}><img src={'/images/wehliye-welcome/'+photo} alt={label}/><strong>{label}</strong></div>)}</section>
+    ['Suits','center.webp'],['Hoodies','hoodie.webp'],['Shirts','shirt.webp'],['T-Shirts','tee.webp'],['Jackets','jacket.webp']
+  ].map(([label,photo])=><div className="wlp-category" key={label}><img src={'/images/wehliye-welcome/'+photo} alt={label} loading="lazy" decoding="async"/><strong>{label}</strong></div>)}</section>
 </main>}
 {page!=='welcome'&&<header className={page==='welcome'?'header lw-hidden-on-welcome':'header'}><button className="icon mobile" onClick={()=>setMenu(!menu)} aria-label="Menu"><Menu/></button><button className="wordmark" onClick={()=>go('shop')}><img className="brand-logo" src="/wehliye-monogram.png" alt="WEHLIYE logo"/><span>WEHLIYE<small>STORE Â· MEN'S FASHION</small></span></button><nav className={menu?'nav open':'nav'}><button onClick={()=>go('shop')}>SHOP ALL</button><button onClick={()=>go('shop','Suits')}>SUITS</button><button onClick={()=>go('shop','Shirts')}>SHIRTS</button><button onClick={()=>go('shop','Shoes')}>SHOES</button><button onClick={()=>go('shop','Trousers')}>TROUSERS</button><button onClick={()=>go('shop','Accessories')}>ACCESSORIES</button><button onClick={()=>go('shop','Casual')}>CASUAL</button></nav><div className="header-actions"><button className="icon" onClick={()=>go('shop')} aria-label="Search"><Search/></button><button className="icon" onClick={()=>{if(user)go('account');else setAuth('login')}} aria-label="Account"><UserRound/></button><button className="icon" onClick={()=>go('wishlist')} aria-label="Wishlist"><Heart/></button><button className="icon bag-btn" onClick={()=>setDrawer(true)} aria-label="Bag"><ShoppingBag/>{qty>0&&<span>{qty}</span>}</button></div></header>}
 {page==='home'&&<>
 <main className="ws-home wh-home">
 <section className="wh-hero wh-hero-single">
   <div className="wh-hero-copy"><span>WELCOME TO</span><h1>WEHLIYE <em>STORE</em></h1><p>MEN'S FASHION</p><button onClick={()=>go('shop')}>SHOP NOW <ArrowRight size={19}/></button></div>
-  <img className="wh-hero-model" src="/images/wh-home/hoodie-standing.png" alt="WEHLIYE model wearing a gray hoodie" />
+  <img className="wh-hero-model" src="/images/wh-home/hoodie-standing.webp" alt="WEHLIYE model wearing a gray hoodie" loading="eager" fetchPriority="high" decoding="async" />
 </section>
 
 <section className="wh-arrivals"><div className="wh-arrivals-heading"><h2>New Arrivals</h2><button onClick={()=>go('shop')}>View All Products <ArrowRight size={21}/></button></div><div className="wh-arrivals-grid">{products.slice(0,6).map(card)}</div>{products.length===0&&<p className="ws-loading">Our collection is loading...</p>}</section>
