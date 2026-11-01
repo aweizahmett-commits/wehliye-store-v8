@@ -264,3 +264,10 @@ body:has(.wh-home) .header .bag-btn span{background:#ffc21c;color:#08101e}
   color: #071a33 !important;
 }
 
+
+/* WEHLIYE STORE — Home Hero Image Zoom Out */
+.ws-hero-images img {
+  transform: scale(0.90);
+  transform-origin: center bottom;
+}
+
