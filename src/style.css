@@ -271,3 +271,20 @@ body:has(.wh-home) .header .bag-btn span{background:#ffc21c;color:#08101e}
   transform-origin: center bottom;
 }
 
+
+/* Home Page Hero — Zoom Out */
+.ws-hero-image {
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  transform: scale(0.85) !important;
+  transform-origin: center bottom !important;
+}
+
+
+/* WEHLIYE STORE — Compact Header */
+.header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  min-height: 65px !important;
+}
+
