@@ -175,3 +175,24 @@ body:has(.wh-home) .header .bag-btn span{background:#ffc21c;color:#08101e}
 /* WEHLIYE CLASSIC COLLECTIONS — scoped to shop only */
 .ws-classic-heading{margin:32px 0 18px;text-align:center}.ws-classic-heading h2{font-size:clamp(26px,3vw,40px);margin:0 0 8px}.ws-classic-heading p{font-size:13px;color:#706b65}.ws-classic-covers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;margin-bottom:34px}.ws-classic-cover{position:relative;min-height:260px;border:0;padding:0;overflow:hidden;text-align:left;background:#10212e;color:white}.ws-classic-cover img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;transition:transform .3s}.ws-classic-cover:hover img{transform:scale(1.05)}.ws-classic-cover:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 25%,#071522df)}.ws-classic-cover span{position:absolute;bottom:20px;left:20px;right:12px;z-index:1}.ws-classic-cover strong{display:block;font-size:22px}.ws-classic-cover small{display:block;font-size:11px;margin-top:5px;color:#e2bc77}.ws-classic-cover.ws-suits-feature{grid-column:span 2;min-height:350px}.ws-classic-cover.ws-suits-feature strong{font-size:36px}.ws-sample-heading{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:35px 0 16px}.ws-sample-heading h2{font-size:27px;margin:0}.ws-sample-heading small{color:#888}.ws-sample-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px 14px}.ws-sample-card{background:#fff;border:1px solid #ece9e4;overflow:hidden}.ws-sample-card img{width:100%;aspect-ratio:3/4;object-fit:cover;background:#eee}.ws-sample-card div{padding:13px}.ws-sample-card h3{font-size:13px;margin:0 0 6px}.ws-sample-card small{font-size:10px;color:#866b4c;letter-spacing:1px}.ws-sample-note{background:#f4f0e8;border-left:3px solid #b28b52;padding:12px 16px;font-size:12px;margin:20px 0}.ws-classic-back{border:1px solid #c8a26c;background:#fff;color:#17212d;padding:10px 15px;cursor:pointer;font-weight:700}.ws-shop-real{margin:35px 0 12px;font-size:24px}
 @media(max-width:900px){.ws-classic-covers,.ws-sample-grid{grid-template-columns:repeat(3,1fr)}}@media(max-width:600px){.ws-classic-covers,.ws-sample-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.ws-classic-cover{min-height:195px}.ws-classic-cover.ws-suits-feature{grid-column:span 2;min-height:260px}.ws-classic-cover strong{font-size:16px}.ws-classic-cover.ws-suits-feature strong{font-size:27px}.ws-sample-card div{padding:9px}}
+
+.ws-back-welcome {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin: 16px 24px;
+  padding: 11px 20px;
+  border: 1px solid #c6a65b;
+  border-radius: 30px;
+  background: #071a33;
+  color: #e5c477;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.ws-back-welcome:hover {
+  background: #c6a65b;
+  color: #071a33;
+}
+
