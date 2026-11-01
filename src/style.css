@@ -237,3 +237,30 @@ body:has(.wh-home) .header .bag-btn span{background:#ffc21c;color:#08101e}
   color: #071a33;
 }
 
+
+/* WEHLIYE STORE — Final Back Arrow */
+.ws-back-welcome {
+  position: absolute !important;
+  top: 50px !important;
+  left: 16px !important;
+  width: 34px !important;
+  height: 34px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  border: 1px solid #d4af37 !important;
+  border-radius: 50% !important;
+  background: #071a33 !important;
+  color: #d4af37 !important;
+  font-size: 20px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 20 !important;
+  cursor: pointer;
+}
+
+.ws-back-welcome:hover {
+  background: #d4af37 !important;
+  color: #071a33 !important;
+}
+
