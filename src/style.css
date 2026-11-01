@@ -288,3 +288,23 @@ body:has(.wh-home) .header .bag-btn span{background:#ffc21c;color:#08101e}
   min-height: 65px !important;
 }
 
+
+/* WEHLIYE STORE — Slim Navigation Header */
+@media (min-width: 901px) {
+  .header {
+    height: 52px !important;
+    min-height: 52px !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .header .ws-back-welcome {
+    width: 30px !important;
+    height: 30px !important;
+    top: 11px !important;
+    left: 16px !important;
+  }
+}
+
