@@ -196,3 +196,17 @@ body:has(.wh-home) .header .bag-btn span{background:#ffc21c;color:#08101e}
   color: #071a33;
 }
 
+
+/* Back to Welcome — remove white strip */
+.ws-back-welcome {
+  position: absolute;
+  top: 18px;
+  left: 24px;
+  z-index: 20;
+  margin: 0;
+  background: #071a33;
+  color: #e5c477;
+  border: 1px solid #c6a65b;
+  border-radius: 30px;
+}
+
